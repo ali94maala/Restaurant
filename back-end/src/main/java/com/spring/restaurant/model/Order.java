@@ -17,8 +17,10 @@ public class Order extends CategoryOrder {
 
     @Column(name = "price")
     private int price;
-    @Column(name = "img")
+
+    @Column(name = "image")
     private String img;
+
     @Column(name = "description")
     private String description;
 
