@@ -12,7 +12,7 @@ export class OrderServiceService {
   private baseUrl = 'http://localhost:8080/api/allorders'
   constructor( private http : HttpClient) { }
 
-  getOrder(): Observable<Order[]> {
+  getOrders(): Observable<Order[]> {
     return this.http.get<Order[]>(this.baseUrl).pipe(
       map(
         response => response
