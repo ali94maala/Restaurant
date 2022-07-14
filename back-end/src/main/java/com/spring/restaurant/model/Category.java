@@ -1,5 +1,6 @@
 package com.spring.restaurant.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +17,7 @@ import java.util.Set;
 
 public class Category extends CategoryOrder{
 
+    @JsonIgnore
      @OneToMany(mappedBy = "category")
      private Set<Order> orders;
 
