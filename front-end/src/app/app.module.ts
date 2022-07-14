@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { OrderItemsComponent } from './componants/order-items/order-items.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -10,9 +11,12 @@ import { OrderItemsComponent } from './componants/order-items/order-items.compon
     OrderItemsComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
