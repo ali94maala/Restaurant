@@ -156,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .nav-menu a i {
