@@ -22,4 +22,8 @@ public class OrderService {
     public List<Order> getAllOrders(){
         return orderRepository.findAll();
     }
+
+    public List<Order> getOrderByIdCategories(Long id){
+        return orderRepository.findByCategoryId(id);
+    }
 }
