@@ -6,13 +6,15 @@ import { OrderItemsComponent } from './componants/order-items/order-items.compon
 import {HttpClientModule} from "@angular/common/http";
 import { CategoryItemsComponent } from './componants/category-items/category-items.component';
 import {RouterModule , Routes} from "@angular/router";
+import {CommonModule} from "@angular/common";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
 const routes:Routes =[
-  {path : '' , component:OrderItemsComponent},
 
-]
+  {path: '', component:OrderItemsComponent}
+];
 
 @NgModule({
   declarations: [
@@ -23,8 +25,9 @@ const routes:Routes =[
   imports: [
     RouterModule.forRoot(routes),
     HttpClientModule,
-    BrowserModule
-  ],
+    BrowserModule,
+    CommonModule
+    ],
   providers: [
 
   ],
