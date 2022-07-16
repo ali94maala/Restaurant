@@ -13,7 +13,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes:Routes =[
 
-  {path: 'category/id', component:OrderItemsComponent},
+  {path: 'category/:id', component:OrderItemsComponent},
   {path: 'category', component:OrderItemsComponent},
   {path: 'orders', component:OrderItemsComponent},
   {path: '',redirectTo : '/orders' , pathMatch:'full'},

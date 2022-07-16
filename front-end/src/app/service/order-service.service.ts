@@ -20,7 +20,7 @@ export class OrderServiceService {
     )
   }
 
-  getOrdersByCategoryId(id : number): Observable<Order[]> {
+  getOrdersByCategoryId(id: string | null): Observable<Order[]> {
     return this.http.get<Order[]>( `${this.baseUrl}category?id=${id}`).pipe(
       map(
         response => response
