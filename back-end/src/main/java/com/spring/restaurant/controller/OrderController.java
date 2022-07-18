@@ -30,4 +30,10 @@ public class OrderController {
     public List<Order> getAllOrderByCategoryId(@RequestParam Long id){
         return orderService.getOrderByIdCategories(id);
     }
+
+    //"http://localhost:8080/api/orderkey?word=key"
+    @GetMapping("orderkey")
+    public List<Order> getOrderByKey(@RequestParam String word){
+        return orderService.getOrderByKey(word);
+    }
 }
