@@ -10,6 +10,7 @@ import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DropdownMenuComponent } from './componants/dropdown-menu/dropdown-menu.component';
 import { SearchOrderComponent } from './componants/search-order/search-order.component';
+import { OrderDetailsComponent } from './componants/order-details/order-details.component';
 
 
 
@@ -35,7 +36,8 @@ const routes:Routes =[
     OrderItemsComponent,
     CategoryItemsComponent,
     DropdownMenuComponent,
-    SearchOrderComponent
+    SearchOrderComponent,
+    OrderDetailsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
