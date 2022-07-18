@@ -51,7 +51,6 @@ export class OrderItemsComponent implements OnInit {
 
    getAllOrdercontainingKey() {
     let keyword = this.route.snapshot.paramMap.get('key');
-    alert("df")
     this.order.getOrdersByKey(keyword).subscribe(
       data => {this.orders=data}
     )
