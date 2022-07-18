@@ -9,6 +9,7 @@ import {RouterModule , Routes} from "@angular/router";
 import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DropdownMenuComponent } from './componants/dropdown-menu/dropdown-menu.component';
+import { SearchOrderComponent } from './componants/search-order/search-order.component';
 
 
 
@@ -34,7 +35,8 @@ const routes:Routes =[
     AppComponent,
     OrderItemsComponent,
     CategoryItemsComponent,
-    DropdownMenuComponent
+    DropdownMenuComponent,
+    SearchOrderComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
