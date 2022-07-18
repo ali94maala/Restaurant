@@ -22,8 +22,7 @@ const routes:Routes =[
   // http://localhost:4200/orders
   {path: 'orders', component:OrderItemsComponent},
   // http://localhost:4200/order/key
-
-  {path: 'order/:key', component:OrderItemsComponent},
+  {path: 'orders/:key', component:OrderItemsComponent},
   // http://localhost:4200
   {path: '',redirectTo : '/orders' , pathMatch:'full'},
   // http://localhost:4200/category/id
