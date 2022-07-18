@@ -16,6 +16,9 @@ import { OrderDetailsComponent } from './componants/order-details/order-details.
 
 const routes:Routes =[
 
+  // http://localhost:4200/order/id
+  {path: 'order/:id', component:OrderDetailsComponent},
+
   // http://localhost:4200/category/id
   {path: 'category/:id', component:OrderItemsComponent},
   // http://localhost:4200/category
