@@ -14,10 +14,17 @@ import { DropdownMenuComponent } from './componants/dropdown-menu/dropdown-menu.
 
 const routes:Routes =[
 
+  // http://localhost:4200/category/id
   {path: 'category/:id', component:OrderItemsComponent},
+  // http://localhost:4200/category
   {path: 'category', component:OrderItemsComponent},
+  // http://localhost:4200/orders
   {path: 'orders', component:OrderItemsComponent},
+  // http://localhost:4200/order/key
+  {path: 'order/:key', component:OrderItemsComponent},
+  // http://localhost:4200
   {path: '',redirectTo : '/orders' , pathMatch:'full'},
+  // http://localhost:4200/category/id
   {path: '**', redirectTo : '/orders' , pathMatch:'full'}
 ];
 
