@@ -46,7 +46,8 @@ const routes:Routes =[
     RouterModule.forRoot(routes),
     HttpClientModule,
     BrowserModule,
-    CommonModule
+    CommonModule,
+    //NgModule()
     ],
   providers: [
 
