@@ -9,7 +9,7 @@ import {CommonModule} from "@angular/common";
 import { DropdownMenuComponent } from './componants/dropdown-menu/dropdown-menu.component';
 import { SearchOrderComponent } from './componants/search-order/search-order.component';
 import { OrderDetailsComponent } from './componants/order-details/order-details.component';
-import {NgbPaginationModule} from "@ng-bootstrap/ng-bootstrap";
+
 
 
 const routes:Routes =[
@@ -45,7 +45,7 @@ const routes:Routes =[
     HttpClientModule,
     BrowserModule,
     CommonModule,
-    NgbPaginationModule,
+
     //NgModule()
   ],
   providers: [
