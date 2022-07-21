@@ -32,6 +32,7 @@
             "styles": [
 
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "src/assets/vendor/icofont/icofont.min.css",
               "src/assets/vendor/boxicons/css/boxicons.min.css",
@@ -57,7 +58,6 @@
               "src/assets/vendor/aos/aos.js",
               "src/assets/js/main.js"
 
-
             ]
           },
           "configurations": {
@@ -65,8 +65,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -136,5 +136,7 @@
       }
     }
   },
-  "defaultProject": "front-end"
+  "cli": {
+    "analytics": "1419727b-d5cc-40fb-b263-ecc0e84910c6"
+  }
 }
