@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DropdownMenuComponent } from './componants/dropdown-menu/dropdown-menu.component';
 import { SearchOrderComponent } from './componants/search-order/search-order.component';
 import { OrderDetailsComponent } from './componants/order-details/order-details.component';
+import {NgbPaginationModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 
@@ -42,11 +43,12 @@ const routes:Routes =[
     SearchOrderComponent,
     OrderDetailsComponent
   ],
-  imports: [
-    RouterModule.forRoot(routes),
-    HttpClientModule,
-    BrowserModule,
-    CommonModule
+    imports: [
+        RouterModule.forRoot(routes),
+        HttpClientModule,
+        BrowserModule,
+        CommonModule,
+        NgbPaginationModule
     ],
   providers: [
 

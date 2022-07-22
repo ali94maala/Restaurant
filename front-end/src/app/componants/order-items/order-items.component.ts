@@ -11,6 +11,7 @@ import {ActivatedRoute} from "@angular/router";
 export class OrderItemsComponent implements OnInit {
 
  orders :Order[] =[];
+ page : number =1;
 
   constructor( private order : OrderServiceService,
                private route : ActivatedRoute ) { }
@@ -54,5 +55,9 @@ export class OrderItemsComponent implements OnInit {
     this.order.getOrdersByKey(keyword).subscribe(
       data => {this.orders=data}
     )
+  }
+
+  doing(){
+    alert(this.page);
   }
 }
