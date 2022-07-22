@@ -22,7 +22,7 @@ export class OrderServiceService {
   }
 
   getOrdersByCategoryId(id: string ,page:number ,size: number): Observable<Order[]> {
-    return this.http.get<Order[]>( `${this.baseUrl}category?id=${id}?page=${page}&size=${size}`).pipe(
+    return this.http.get<Order[]>( `${this.baseUrl}category?id=${id}&page=${page}&size=${size}`).pipe(
       map(
         response => response
       )
@@ -32,7 +32,7 @@ export class OrderServiceService {
 
 
   getOrdersByKey(word: string,page:number,size:number): Observable<Order[]> {
-    return this.http.get<Order[]>( `${this.baseUrl}orderkey?word=${word}?page=${page}&size=${size}`).pipe(
+    return this.http.get<Order[]>( `${this.baseUrl}orderkey?word=${word}&page=${page}&size=${size}`).pipe(
       map(
         response => response
       )

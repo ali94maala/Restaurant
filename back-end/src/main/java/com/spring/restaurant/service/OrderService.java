@@ -32,8 +32,8 @@ public class OrderService {
     }
 
     public List<Order> getOrderByKey(String key ,int page , int size){
-        Pageable pageable = PageRequest.of(page, size);
-        return orderRepository.findByNameContaining(key ,pageable).getContent();
+        Pageable pageable = PageRequest.of(page , size);
+        return orderRepository.findByNameContaining(key , pageable).getContent();
     }
 
     public Order getOrder(long id){
