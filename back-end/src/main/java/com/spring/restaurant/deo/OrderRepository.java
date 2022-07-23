@@ -19,5 +19,8 @@ public interface OrderRepository extends JpaRepository<Order,Long> {
 
     @Query("select count (id) from Order where category.id = ?1")
     public long getOrderLengthByCategoryId(long id);
+
+    @Query ("select count (id) from Order where name LIKE %?1%")
+    public long getOrderSizeByKey (String key);
 }
 

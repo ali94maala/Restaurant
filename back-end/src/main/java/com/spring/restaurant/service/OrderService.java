@@ -49,4 +49,8 @@ public class OrderService {
     }
 
 
+    public long getOrderSizeByKey(String key){
+        return orderRepository.getOrderSizeByKey(key);
+    }
+
 }
