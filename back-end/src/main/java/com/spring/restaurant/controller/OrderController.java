@@ -48,4 +48,10 @@ public class OrderController {
     public long orderSize(){
         return orderService.getAllOrderSize();
     }
+
+    //"http://localhost:8080/api/categoryidsize?id={value}
+    @GetMapping("categoryidsize")
+    public long getOrderByIdCategorySize(@RequestParam long id){
+        return orderService.getOrdersByCategoryIdLength(id);
+    }
 }
