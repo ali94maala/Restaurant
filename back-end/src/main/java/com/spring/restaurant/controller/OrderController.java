@@ -42,4 +42,10 @@ public class OrderController {
     public Order getOrderById(@RequestParam Long id){
         return orderService.getOrder(id);
     }
+
+    //"http://localhost:8080/api/ordersize
+    @GetMapping("ordersize")
+    public long orderSize(){
+        return orderService.getAllOrderSize();
+    }
 }
